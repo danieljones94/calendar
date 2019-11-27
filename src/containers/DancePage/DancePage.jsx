@@ -28,18 +28,9 @@ class DancePage extends Component {
     this.setState({ searchValue }, this.filterEvents);
   };
 
-  filterEvents = searchText => {
-    const filteredEvents = this.state.filteredEvents.filter(event => {
-      if (
-        event.summary.toLowerCase().includes("dance") ||
-        event.summary.toLowerCase().includes("jump") ||
-        event.summary.toLowerCase().includes("shea") ||
-        event.summary.toLowerCase().includes("barry") ||
-        event.summary.toLowerCase().includes()
-      ) {
-        return event;
-      }
-      return false;
+  filterEvents = () => {
+    const filteredEvents = this.state.events.filter(event => {
+      return event.summary.toLowerCase().includes(this.state.searchValue);
     });
     this.setState({ filteredEvents });
   };
