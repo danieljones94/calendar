@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import styles from "./Dance.module.scss";
 
 class Dance extends Component {
   state = {};
 
   render() {
     return (
-      <section>
+      <section className={styles.danceEvent}>
         <p>{this.props.dance.date}</p>
         <p>
           From {this.props.dance.start.date} to {this.props.dance.end.date}
