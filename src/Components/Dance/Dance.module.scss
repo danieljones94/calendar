@@ -1,15 +1,40 @@
-.danceEvent {
-  border: black solid 2px;
-  background-image: url(../../images/bignap.gif);
-  background-size: contain;
-  color: white;
-  height: 40vh;
-  font-size: 1.5em;
-  text-align: center;
-  border: whitesmoke 2px dashed;
-  text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+.danceContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2vh 0;
+  background: black;
 
-  // p {
-  //   margin-top: 5vh;
-  // }
+  .danceEvent {
+    // border: black solid 2px;
+    // background-image: url(../../images/bignap.gif);
+    // background-size: contain;
+    // background-color: blue;
+    background-image: url(../../images/event-ticket-5065687.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: black;
+    width: 50%;
+    height: 40vh;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+    font-family: "Alata", sans-serif;
+    margin-top: 5vh;
+
+    // p {
+    //   margin-top: 5vh;
+    // }
+  }
+
+  .napoleon {
+    height: 20vh;
+    width: 20vw;
+    position: relative;
+    top: 12vh;
+  }
+  .ticketContent {
+    position: relative;
+    top: 10vh;
+    right: 3vw;
+  }
 }

@@ -6,7 +6,13 @@ class Header extends Component {
   render() {
     return (
       <header className={styles.header}>
-        <h1>Do you love to dance?!</h1>
+        <h1>
+          <img
+            src="https://fontmeme.com/permalink/191202/4a83c2e5c41edb85629df11555283f81.png"
+            alt="disco-night-font"
+            border="0"
+          />
+        </h1>
         <textarea
           name="search"
           id="search"
@@ -16,7 +22,11 @@ class Header extends Component {
           value={this.props.setSearch}
         ></textarea>
         <button onClick={this.props.filter} className={styles.filterButton}>
-          Show me the dance
+          <img
+            src="https://fontmeme.com/permalink/191202/17fcf227432bc2623f26e7080d898d8b.png"
+            alt="disco-night-font"
+            border="0"
+          />
         </button>
       </header>
     );

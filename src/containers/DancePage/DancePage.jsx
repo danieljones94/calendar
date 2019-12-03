@@ -36,9 +36,8 @@ class DancePage extends Component {
   };
 
   render() {
-    console.log(this.state.events);
     return (
-      <section>
+      <section className={styles.dancePageContainer}>
         <Header
           className={styles.header}
           search={this.searchType}

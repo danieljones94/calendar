@@ -1,9 +1,11 @@
 .header {
   text-align: center;
   min-height: 20vh;
-  background-image: url(../../images/discoball.jpg);
+  // background-image: url(../../images/discoball.jpg);
+  background: black;
   display: flex;
   flex-direction: column;
+  font-family: "Fugaz One", cursive;
 
   h1 {
     display: inline-block;
@@ -34,6 +36,7 @@
       -2px 0px 0.2px #000, 1px 0px 0.2px #000, -2px 1px 0.2px #000,
       0px 1px 0.2px #000, 1px 1px 0.2px #000;
     cursor: pointer;
+    font-family: "Fugaz One", cursive;
     // animation: flash linear 1s infinite;
 
     // @keyframes flash {
